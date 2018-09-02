@@ -50,6 +50,8 @@ GEM
     bindex (0.5.0)
     bootsnap (1.3.1)
       msgpack (~> 1.0)
+    bootstrap-sass (3.3.1.0)
+      sass (~> 3.2)
     builder (3.2.3)
     byebug (10.0.2)
     capybara (3.6.0)
@@ -139,7 +141,7 @@ GEM
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     ruby_dep (1.5.0)
-    rubyzip (1.2.1)
+    rubyzip (1.2.2)
     sass (3.5.7)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -177,7 +179,7 @@ GEM
       thread_safe (~> 0.1)
     uglifier (4.1.18)
       execjs (>= 0.3.0, < 3)
-    web-console (3.6.2)
+    web-console (3.7.0)
       actionview (>= 5.0)
       activemodel (>= 5.0)
       bindex (>= 0.4.0)
@@ -193,6 +195,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap (>= 1.1.0)
+  bootstrap-sass (= 3.3.1)
   byebug
   capybara (>= 2.15)
   chromedriver-helper
@@ -205,6 +208,7 @@ DEPENDENCIES
   selenium-webdriver
   spring
   spring-watcher-listen (~> 2.0.0)
+  sprockets (~> 3.7)
   sqlite3
   turbolinks (~> 5)
   tzinfo-data
