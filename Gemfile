@@ -8,6 +8,7 @@ gem 'rails', '~> 5.2.1'
 gem 'bootstrap-sass', '3.3.1'
 #gem 'sprockets', '2.11.0'
 gem 'sprockets', '~> 3.7'
+gem 'devise'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
