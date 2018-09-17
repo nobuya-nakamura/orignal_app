@@ -1,3 +1,18 @@
+<% if signed_in? %>
+  <div class="row">
+    <aside class="col-md-4">
+      <section>
+        <%= render 'shared/user_info' %>
+      </section>
+       </aside>
+  </div>
+  <h1>アーティスト一覧</h1>
+<ul>
+  <% @topics.each do |topic| %>
+    <li><%= link_to topic.title, topics_show_path(topic.id) %></li>
+  <% end %>
+</ul>
+<% else %>
 <div class="center jumbotron">
   <h1>Welcome to the Sample App</h1>
 
@@ -9,3 +24,4 @@
 
   <%= link_to "Sign up now!", new_user_registration_path, class: "btn btn-lg btn-primary" %>
 </div>
+<% end %>
